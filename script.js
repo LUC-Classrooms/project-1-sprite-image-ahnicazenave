@@ -21,6 +21,7 @@ function setup(){
 function draw(){
   // this function runs again and again (60x per second)
   background(200); //light gray background
+  push(); //creat image layer
   translate(x, y);
     if(mouseIsPressed){
      x = mouseX
@@ -75,5 +76,6 @@ function draw(){
   fill(255); // eyes white color 
   ellipse(-20, -87, 9); //left eye pupil
   ellipse(20, -87, 9); //right eye pupil
-
+  pop(); // dispose of image
+  
 }
